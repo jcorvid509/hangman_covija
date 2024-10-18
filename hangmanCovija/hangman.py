@@ -98,11 +98,11 @@ def hangman():
             
             print("Enhorabuena, la palabra era", word2, "ganaste")
             if fails <= 3:
-                pygame.mixer.music.load(r'mp3\success\0.mp3')    # sonido de victoria con menos de 4 fallos
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\0.mp3')    # sonido de victoria con menos de 4 fallos
             elif fails <= 7:
-                pygame.mixer.music.load(r'mp3\success\4.mp3')    # sonido de victoria con 4 a 7 fallos
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\4.mp3')    # sonido de victoria con 4 a 7 fallos
             else:
-                pygame.mixer.music.load(r'mp3\success\8.mp3')    # sonido de victoria EPICARDO con mas de 7 fallos
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\8.mp3')    # sonido de victoria EPICARDO con mas de 7 fallos
             
             pygame.mixer.music.play()   # reproducimos el sonido de victoria
             fails = 10
@@ -128,9 +128,9 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
         case 1:
             
             if state == 0:  # dependiendo de si ha fallado o no la pregunta cargamos un sonido u otro
-                pygame.mixer.music.load(r'mp3\error\1.mp3')      # sonido si falla teniendo "fail" fallos
+                pygame.mixer.music.load(r'hangmanCovija\mp3\error\1.mp3')      # sonido si falla teniendo "fail" fallos
             else:
-                pygame.mixer.music.load(r'mp3\success\_.mp3')    # sonido si acierta teniendo "fail" fallos
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\_.mp3')    # sonido si acierta teniendo "fail" fallos
            
             pygame.mixer.music.play()   #reproducimos el sonido
             # imprime el ahorcado
@@ -142,9 +142,9 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             print("_______")
         case 2:
             if state == 0:
-                pygame.mixer.music.load(r'mp3\error\2.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\error\2.mp3')
             else:
-                pygame.mixer.music.load(r'mp3\success\_.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\_.mp3')
             pygame.mixer.music.play()
             print(" ")
             print(" |")
@@ -154,9 +154,9 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             print("_|_____")
         case 3:
             if state == 0:
-                pygame.mixer.music.load(r'mp3\error\3.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\error\3.mp3')
             else:
-                pygame.mixer.music.load(r'mp3\success\_.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\_.mp3')
             pygame.mixer.music.play()
             print(" _____ ")
             print(" |")
@@ -166,9 +166,9 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             print("_|_____")
         case 4:
             if state == 0:
-                pygame.mixer.music.load(r'mp3\error\4.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\error\4.mp3')
             else:
-                pygame.mixer.music.load(r'mp3\success\_.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\_.mp3')
             pygame.mixer.music.play()
             print(" _____ ")
             print(" |   | ")
@@ -178,9 +178,9 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             print("_|_____")
         case 5:
             if state == 0:
-                pygame.mixer.music.load(r'mp3\error\5.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\error\5.mp3')
             else:
-                pygame.mixer.music.load(r'mp3\success\_.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\_.mp3')
             pygame.mixer.music.play()
             print(" _____ ")
             print(" |   | ")
@@ -190,9 +190,9 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             print("_|_____")
         case 6:
             if state == 0:
-                pygame.mixer.music.load(r'mp3\error\6.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\error\6.mp3')
             else:
-                pygame.mixer.music.load(r'mp3\success\_.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\_.mp3')
             pygame.mixer.music.play()
             print(" _____ ")
             print(" |   | ")
@@ -202,9 +202,9 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             print("_|_____")
         case 7:
             if state == 0:
-                pygame.mixer.music.load(r'mp3\error\7.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\error\7.mp3')
             else:
-                pygame.mixer.music.load(r'mp3\success\_.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\_.mp3')
             pygame.mixer.music.play()
             print(" _____ ")
             print(" |   | ")
@@ -214,9 +214,9 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             print("_|_____")
         case 8:
             if state == 0:
-                pygame.mixer.music.load(r'mp3\error\8.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\error\8.mp3')
             else:
-                pygame.mixer.music.load(r'mp3\success\_.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\_.mp3')
             pygame.mixer.music.play()
             print(" _____ ")
             print(" |   | ")
@@ -226,9 +226,9 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             print("_|_____")
         case 9:
             if state == 0:
-                pygame.mixer.music.load(r'mp3\error\9.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\error\9.mp3')
             else:
-                pygame.mixer.music.load(r'mp3\success\_.mp3')
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\_.mp3')
             pygame.mixer.music.play()
             print(" _____ ")
             print(" |   | ")
@@ -238,7 +238,7 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             print("_|_____")
         case 10:
             # ahorcado si perdemos
-            pygame.mixer.music.load(r'mp3\error\10.mp3')
+            pygame.mixer.music.load(r'hangmanCovija\mp3\error\10.mp3')
             pygame.mixer.music.play()
             print(" _____ ")
             print(" |   | ")
@@ -250,7 +250,7 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             print("HAS MUELTO")
         case _:
             #ahorcado si no tenemos fallos
-            pygame.mixer.music.load(r'mp3\success\_.mp3')
+            pygame.mixer.music.load(r'hangmanCovija\mp3\success\_.mp3')
             pygame.mixer.music.play()
             print("")
             print("")
