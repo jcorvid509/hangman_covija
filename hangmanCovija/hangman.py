@@ -6,12 +6,11 @@
 # o cuando se llegue 10 fallos
 
 
-def hangman():
-    
-    import os                           # importamos os para borrar la pantalla
-    import pygame                       # importamos pygame para reproducir sonidos
-    import re                           # importadmos re
+import os                           # importamos os para borrar la pantalla
+import pygame                       # importamos pygame para reproducir sonidos
+import re                           # importadmos re
 
+def hangman():
     """Al tener la funcion moneco dentro del archivo no es necesario"""
     #import sys                          #importamos sys para cambiar la ruta de importación de archivos py
     #sys.path.append(r'Python\pruebas')  #cambiamos la ruta
@@ -19,9 +18,8 @@ def hangman():
 
     os.system("cls")    # limpiamos la pantalla
 
-
     cw = "n"    # la variable cw no indica si se ha escrito bien la palabra
-    while cw != ("y" or "Y"):                                           # Preguntamos por la palabra, si se ha equivocado vuelve a empezar
+    while cw not in ("y", "Y"):                                           # Preguntamos por la palabra, si se ha equivocado vuelve a empezar
         os.system("cls")
         word = input("Introduce la palabra del ahorcado: ")             # pedimos la palabra y la guardamos en word
         if len(word) == 0 or " " in word:                               # si la palabra tiene espacios o vacios, volvemos al bucle
@@ -130,7 +128,7 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             if state == 0:  # dependiendo de si ha fallado o no la pregunta cargamos un sonido u otro
                 pygame.mixer.music.load(r'hangmanCovija\mp3\error\1.mp3')      # sonido si falla teniendo "fail" fallos
             else:
-                pygame.mixer.music.load(r'hangmanCovija\mp3\success\_.mp3')    # sonido si acierta teniendo "fail" fallos
+                pygame.mixer.music.load(r'hangmanCovija\mp3\success\\_.mp3')    # sonido si acierta teniendo "fail" fallos
            
             pygame.mixer.music.play()   #reproducimos el sonido
             # imprime el ahorcado
@@ -258,9 +256,6 @@ def moneco(fail, state):    # función que imprime el muñeco y hace sonar los f
             print("")
             print("")
             print("")
-
-
-
 
 
 
